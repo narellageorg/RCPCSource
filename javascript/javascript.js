@@ -7,10 +7,19 @@ if (edad >= 18) {
   text = "¡Ups! Continúa navegando bajo tu propio riesgo.";
 }
 
-		
 
+var estaseguro = false;
+function estaseguro() {
+    if(allowPrompt){
+        if (!estaseguro && true) {
+            estaseguro = true;
+            var confMessage = " ¿Estás seguro que quieres abandonar la página? ¡Nos vemos pronto!";
+            return confMessage;
+        }
+    }else{
+        allowPrompt = true;
+    }
+}
 
-
-window.addEventListener("beforeunload", (event) => {
-  event.returnValue = true;
-});
+var allowPrompt = true;
+window.onbeforeunload = estaseguro;
