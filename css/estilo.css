@@ -10,17 +10,6 @@
 	scroll-behavior: smooth;
 	font-family: 'Poppins', sans-serif; }
 
-.flex-container { 
-	display:flex;
-	flex-direction:row; }
-
-.flex-container div { 
-	 flex-basis: 100%; }
-
-@media (max-width:300px) {
-	.flex-container { flex-direction:column; }
-	.flex-container div { flex-basis:100%; }
-}
 
 body { 
 	background: #fff;
@@ -257,10 +246,44 @@ margin-bottom: 4rem; }
 	height: 100vnh;
 	font-size: 13px; }
 
-@media (max-width: 768px) {
-	.container { 
-	flex: display;
-	flex-direction:column; } }
 
+    .tg  { 
+    	border-collapse:collapse; }
 
-}
+.tabla { 
+	display:flex;
+	justify-content:center;
+	align-items:center; }
+
+    .tg td, th {
+    	border-color:white;
+    	border-style:solid;
+    	border-width:1px;
+      overflow:hidden;
+      padding:10px 5px;
+      text-align: center;
+      vertical-align: center;
+      text-transform:uppercase;
+      width:500px; }
+
+    .tg .tt { background-color:#fb78a2; }
+    .tg .album { background-color:#c691eb; }
+    .tg b  { font-size: 20px; }
+    .tg .año { font-style: italic; }
+
+    .container-disco { 
+    		display:grid;
+    		grid-template-columns:1fr 1fr;
+    		padding: 30px;
+    		margin-top: 2rem; 
+    		margin-bottom: 5rem;}
+
+/* acá edité el carousel de bootstrap */
+.carousel { margin: 1rem; width: 300px; height:300px;margin-left:50px;margin-top:45px; }    		 
+
+.tit { 
+	width: 100%;
+	margin-top:6rem;
+	display:flex;
+	justify-content:center; }
+

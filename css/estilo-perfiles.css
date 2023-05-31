@@ -204,5 +204,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin-bottom: 6rem;
-}
+  margin-bottom: 6rem; }
+
+.navform a { 
+	color:purple;
+	 }
