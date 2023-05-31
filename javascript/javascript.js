@@ -9,7 +9,7 @@ if (edad >= 18) {
 
 		
 
-		window.onbeforeunload = popup;
+
 
 window.addEventListener("beforeunload", (event) => {
   event.returnValue = true;
